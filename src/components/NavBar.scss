@@ -1,0 +1,65 @@
+// NavBar.scss
+
+.navbar {
+
+  display: flex;
+  background-color: #2f3f60;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  position: relative;
+
+  a {
+
+    text-decoration: none;
+    padding: 22px 10px;
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 300;
+
+    &:hover {
+
+      background-color: darken(#2f3f60, 10%);
+
+    }
+
+  }
+
+  .user {
+
+    margin-right: 25px;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 22px 10px;
+    font-size: 2.3rem;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    &:hover {
+
+      background-color: darken(#2f3f60, 10%);
+
+    }
+
+  }
+
+  .dropdown {
+
+    position: absolute;
+    right: 10px;
+    top: 100%;
+    background-color: #343434;
+    display: flex;
+    flex-direction: column;
+
+    a {
+
+      padding: 10px;
+
+    }
+
+  }
+
+}

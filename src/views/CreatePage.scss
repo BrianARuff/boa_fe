@@ -1,0 +1,157 @@
+// CreatePage.scss
+
+.create-page{
+
+    p{
+        width: 60%;
+        margin: 0 auto;
+
+        @media(max-width: 400px){
+            width: 90%;
+        }
+
+    }
+
+  .fail {
+
+    color: red;
+    width: 100%;
+    margin: auto;
+
+  }
+
+    h1{
+        border-bottom: 1px solid #343434;
+        text-align: center;
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+
+    .content{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: 400px){
+            flex-direction: column;
+        }
+
+
+        .form-container {
+
+        //   width: 50%;
+          display: flex;
+          justify-content: center;
+
+          @media (max-width: 400px) {
+            width: 100%;
+          }
+          background-color: rgb(240, 240, 240);
+          border: 1px solid rgb(216, 216, 216);
+          background-color: #fff;
+          border: 1px solid rgb(179, 179, 179);
+          border-radius: 4px;
+          padding: 15px;
+
+          @media(max-width: 400px){
+            align-self: center;
+          }
+
+
+          .create-form {
+
+            text-align: center;
+            width: 174px;
+
+          }
+
+          input{
+              margin-bottom: 10px;
+              padding: 10px;
+              height: 20px;
+              width: 150px;
+
+          }
+          button{
+              padding: 10px 15px;
+              border: 1px solid #343434;
+              border-radius: 4px;
+              margin-bottom: 5px;
+              width: 174px;
+              font-size: 1.4rem;
+
+              &:hover{
+                  background-color: lightblue;
+              }
+          }
+
+          p{
+              margin-top: 10px;
+          }
+
+        }
+
+        .quiz-display{
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          background-color: #fff;
+          border: 1px solid rgb(179, 179, 179);
+          border-radius: 4px;
+          padding: 15px;
+          margin-left: 15px;
+
+
+          @media(max-width: 400px){
+            margin-top: 15px;
+            width: 85%;
+        }
+
+
+          @media (max-width: 400px) {
+            width: 100%;
+            margin-top: 15px;
+          }
+
+            h2{
+                margin-bottom: 10px;
+            }
+            h3 {
+
+              font-size: 1.6rem;
+              font-weight: bold;
+              margin: 10px 0;
+
+            }
+
+            ul {
+
+              display: flex;
+              flex-direction: column;
+              align-items: left;
+              padding-left:20px;
+
+            }
+
+            li{
+                font-size: 1.5rem;
+                padding: 10px;
+                span {
+
+                  float: right;
+                  margin-right: 10px;
+                  cursor: pointer;
+
+                }
+
+                &:hover {
+
+                  background-color: lightgrey;
+
+                }
+
+            }
+        }
+    }
+}
